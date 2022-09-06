@@ -615,6 +615,60 @@ body {
     background: #f18121;
     color: #fff;
 }
+
+.follow-component{
+    display: flex;
+    flex-direction: column;
+} 
+.follow-list{
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.follow-item{
+    width: 24%;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid rgb(193, 179, 179);
+}
+.rank{
+    background: #f18121;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+.follow-item-info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.follow-item-info > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.follow-item-other-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.item-name,.item-role{
+    margin-bottom: 7px;
+}
+.item-name{
+    color: #18191a;
+}
+.item-role{
+    color: #999;
+}
 /* footer */
 footer{
     min-width: 1200px;
@@ -714,6 +768,14 @@ footer{
     }
     .chapterList-component > a{
         width: 100%;
+    }
+    .follow-list{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .follow-item{
+        width: 100%;
+        padding: 10px 0;
     }
     footer{
         min-width: 0;
