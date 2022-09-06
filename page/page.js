@@ -11,16 +11,25 @@ $(document).ready(function () {
             $('.des-component').css({'display':'flex'})
             $('.chapterList-component').css({'display':'none'})
             $('.comment-component').css({'display':'none'})
+            $('.follow-component').css({'display':'none'})
         }
         if (aId == 'feature-bar-chapter'){
             $('.des-component').css({'display':'none'})
             $('.chapterList-component').css({'display':'flex'})
             $('.comment-component').css({'display':'none'})
+            $('.follow-component').css({'display':'none'})
         }
         if (aId == 'feature-bar-comment'){
             $('.des-component').css({'display':'none'})
             $('.chapterList-component').css({'display':'none'})
             $('.comment-component').css({'display':'flex'})
+            $('.follow-component').css({'display':'none'})
+        }
+        if (aId == 'feature-bar-follow'){
+            $('.des-component').css({'display':'none'})
+            $('.chapterList-component').css({'display':'none'})
+            $('.comment-component').css({'display':'none'})
+            $('.follow-component').css({'display':'flex'})
         }
     });
 })
